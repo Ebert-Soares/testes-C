@@ -13,7 +13,7 @@ int main()
 
     char archiveformat[10];
 
-    char information[100000];
+    char information[10000];
 
     printf("What is the file name? ");
     fgets(desdfolder, 100, stdin);
@@ -32,7 +32,7 @@ int main()
 	}
 
     printf("Write your code:\n");
-    fgets(information, 1000, stdin);
+    fgets(information, 10000, stdin);
     fprintf(fp, "%s", information);
 
     fclose(fp);
